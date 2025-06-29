@@ -1,0 +1,423 @@
+* {margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+
+.oculto {display: none;}
+
+/* esta es para modo oscuro*/
+
+
+/*partes compartidas*/
+
+header {background:linear-gradient(180deg, gray , black);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1em;
+       }
+
+
+
+.titulo {display: flex;
+        align-items: flex-end;
+        }
+
+.titulo img {max-width: 5rem;}
+
+
+nav { margin: 0.5em;}
+
+
+.menu li {padding: 0.3em;
+          border: 3px solid #000000;
+          border-radius: 5px;
+          border-color: rgb(204, 9, 74);
+          margin: 0.2em;
+          width: 33%
+         }
+
+.menu a { text-decoration: none;}
+
+.Ubicacion{ margin: 1em;}
+
+body {background:linear-gradient(45deg, black, gray);
+      color: white;
+      min-height: 100vh;
+    }
+
+
+footer{background: linear-gradient(180deg, rgba(255, 0, 98, 0.842),rgb(204, 9, 171));
+        color: white;
+        padding: 1em;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+a {color: white;}
+
+
+.redes {display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;  
+    width: 75%;
+    border-radius: 0.2em;
+    background:linear-gradient(180deg, gray , black);
+       }
+
+
+.newsletter{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em; /* espacio entre los elementos */
+  flex-direction: row;
+}
+
+
+
+.alerta { display: flex;
+         }
+
+.alerta img{padding-right: 0.1em;
+            max-width: 20px;
+           }
+
+
+/* esta es para toggle la barra del menu */
+nav ul {
+        list-style-type: none;
+        display: none ;
+      }
+
+.abrir {
+        display: flex;
+        flex-direction: column;
+        
+       }
+
+
+/*estilo de home*/
+main img {
+     width: 100%; 
+     max-width: 200px; 
+     height: 100px; 
+     object-fit: cover; /* Asegura que se recorten proporcionalmente si no coinciden las dimensiones */
+     padding: 1em;
+     }
+
+
+.estelar {display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 1em;
+             }
+
+.estelar img {      width: 100%; 
+                    max-width: 300px; 
+                    height: 150px; 
+                    object-fit: cover; /* Asegura que se recorten proporcionalmente si no coinciden las dimensiones */
+                    padding: 1em;
+            }
+
+.subtitu{   display: flex;
+            flex-direction: column;
+            text-align: center;}
+
+.card{  display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+.cards { display: flex;
+         justify-content: center;
+}
+
+.fondo {display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+       }
+
+table{
+    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 25px 25px; /* horizontal (columnas), vertical (filas) */   
+    }
+
+td {padding: 10px;
+    text-align: center; background:linear-gradient(180deg, gray , black);
+    border-radius: 0.5em;
+    }
+
+td p {margin: 10px;
+      }   
+
+td a { 
+       padding: 0.3em;
+       color: pink;
+       text-decoration: none;
+    }
+
+
+/*estilo de FAQ */
+
+.faq article{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: space-between;
+             padding: 1em;
+            }
+
+.faq article section {
+                        height: 1500px;
+                        max-width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                     }
+   
+   
+/*estilo contacto*/
+
+
+
+.contacto { display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 2em;   
+             height: 100%; 
+            margin-bottom: 3.2em;
+          }
+
+.contacto form {background: linear-gradient(180deg, rgba(255, 0, 98, 0.842),rgb(204, 9, 171));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px;
+                }
+      
+.contacto form input { margin: 7px;}
+   
+.contacto a {border: 3px solid #000000;
+             border-radius: 5px;
+             border-color: rgba(255, 0, 98, 0.842); 
+             padding: 0.3em;
+             text-decoration: none;
+            }
+
+.captcha {text-align: center;}
+
+/*estilo de Reviews*/
+
+.opiniones{ display: flex;
+            justify-content: center;
+            width: 100%;
+            overflow-x: auto; /* permite scroll horizontal si es necesario */
+}
+.contenedor-review {display: flex;
+                     flex-direction: column; 
+                     align-items: center;}
+
+.reviewform {display: flex;
+             flex-direction: column; 
+             width: 66%; 
+             align-items: center; 
+             margin: 1em;}
+
+.reviewform input { width: 66%; padding: 0.5em;} /* estan iguales pero con los espacios no se combinarlos*/
+.reviewform select {width: 66%; padding: 0.5em;}
+.reviewform option {font-size: medium; padding: 0.3em;}
+
+.confirmar {margin: 1em;
+             padding: 1.2em; 
+             border-radius: 0.3em; 
+             width: 10em; 
+             color: white; 
+             background: linear-gradient(180deg, rgba(255, 0, 98, 0.842),rgb(204, 9, 171));  }
+
+.modificar-btn{background-color: yellow; 
+                border-radius: 0.5em;
+                padding: 0.3em;
+                 margin: 0.3em}
+
+.borrar-btn{background-color: red;
+            border-radius: 0.5em;
+             padding: 0.3em; 
+             margin: 0.3em}
+
+.guardar-btn{background-color: green;
+            border-radius: 0.5em;
+             padding: 0.3em; 
+             margin: 0.3em}
+
+.opiniones input{padding:0.3em;
+                 background-color: gray;
+                color: white;
+                text-align: center;
+                 font-size: medium }
+                 
+.contanos{ text-align: center; font-size: xx-large; }
+
+
+/* termina mobile  y empieza desktop */
+
+@media screen and (min-width: 480px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em;
+    
+    }
+   
+    .titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+  
+
+    .menu {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: 1.5em;
+        padding: 1em;
+        list-style-type: none;
+        border-radius: 0.4em;
+        background: linear-gradient(180deg, rgba(255, 0, 98, 0.842),rgb(204, 9, 171))
+    }
+    
+    .menu li {border: none;
+              text-align: center;
+             }
+    
+    .abre {display: none;}  
+    
+
+    .abrir {
+        display: flex;
+        flex-direction: row; 
+       }
+
+    main{padding: 2em;}
+
+    .estelar img { width: 100%; 
+                    max-width: 1000px; 
+                    height: 500px; 
+                    object-fit: cover; /* Asegura que se recorten proporcionalmente si no coinciden las dimensiones */
+                    padding: 1em;
+                 }
+
+    .otros {display: flex;
+                justify-content: space-around;
+        }
+
+    .subtitu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0.5em;
+    }
+    
+    .cards { display: flex;
+         flex-direction: column;
+        }
+    
+    .card{display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .card div {display: flex;
+               flex-direction: column;
+              justify-content: space-between;
+    }
+
+    .card img {
+        padding-left: 0%;
+        width: 100%; 
+        max-width: 250px; 
+        height: 250px; 
+        object-fit: cover; /* Asegura que se recorten proporcionalmente si no coinciden las dimensiones */
+    }
+     
+    .artistas {
+        font-size: xx-large;
+        padding: 0.2em;
+        background-color: rgba(0, 0, 0, 0.356);
+        border-radius: 0.2em;
+    }
+
+    .fondo {background:linear-gradient(180deg, rgba(255, 0, 98, 0.842) , black);
+            border-radius: 1em;
+    }
+
+    footer { display: flex;
+             flex-direction: column;         
+             align-items: center;
+            }
+
+    footer div{display: flex;
+              justify-content: center;
+    }
+
+    footer div img {
+        padding-right:0.3em ;
+        width: 100%;
+        max-width: 3em;
+    }
+
+    footer form {
+        padding: 0.5em;
+    }
+
+    td {min-width: 190px;}
+
+  
+    td a { 
+         padding: 0.3em;
+         border: 3px solid #000000;
+         border-radius: 5px;
+         border-color: rgb(204, 9, 74);
+         text-decoration: none;
+    }
+
+
+    .faq article section {
+                        height: 1500px;
+                        max-width: 66%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                     }
+}
